@@ -43,12 +43,23 @@ _SELECT CONCAT(name, ' ', DOE)_
 
 _AS "Employee’s brief" FROM employee_info;_
 
+
+![](Trim_Name.png)
+
+
+The snapshot above shows the removed spaces from the Name column and the command that was used to achieve this, is as follows:
+
+_SELECT Employee_ID,_
+
+_Trim( Name) AS Name from employee_info;_
+
+
+
 ## Conclusion:
 
 These tasks have provided me a hands-on experience in data manipulation within a MySQL database. The primary objective was to get familiarized with various data manipulation commands, including data replacement, text modification, data merging, and data cleaning.
 
 The first snapshot demonstrated how to efficiently replace data within the 'Department' column using an SQL UPDATE command. The second snapshot showed the transformation of text data to uppercase, ensuring uniformity in the 'name' column.
-
-Lastly, the third snapshot illustrated the merging of employee names and Date of Entry (DOE) into a single column named "Employee’s brief”.
+The third snapshot shows the merging of employee names and Date of Entry (DOE) into a single column named "Employee’s brief”. And the last snapshot shows the removed spaces from the Name column.
 
 These tasks collectively highlight the versatility of SQL in managing and enhancing data within a MySQL database, ultimately contributing to more effective data management and analysis.
